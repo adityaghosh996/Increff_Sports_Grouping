@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>baseURL</key>
+	<string>http://7c2f491f.ngrok.io/</string>
 </dict>
 </plist>
