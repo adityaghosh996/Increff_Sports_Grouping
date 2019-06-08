@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1D0217FD09766B204359AD4C /* Pods_Increff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7166C2B56B08C1BFC4453CC7 /* Pods_Increff.framework */; };
+		B873154722ABB33100A290F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873154622ABB33100A290F9 /* MainViewController.swift */; };
+		B873154922ABB88800A290F9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873154822ABB88800A290F9 /* SignupViewController.swift */; };
+		B873154B22ABC6A400A290F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873154A22ABC6A400A290F9 /* LoginViewController.swift */; };
+		B873154D22ABDDE100A290F9 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873154C22ABDDE100A290F9 /* OwnerViewController.swift */; };
+		B873154F22ABDF8B00A290F9 /* OwnerActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873154E22ABDF8B00A290F9 /* OwnerActivityTableViewCell.swift */; };
+		B873155322AC009300A290F9 /* AddAcitivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155222AC009300A290F9 /* AddAcitivityViewController.swift */; };
+		B873155522AC30D400A290F9 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155422AC30D400A290F9 /* UserViewController.swift */; };
+		B873155722AC343E00A290F9 /* UserCreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155622AC343E00A290F9 /* UserCreateEventViewController.swift */; };
+		B873155922AC3D8200A290F9 /* CreateActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155822AC3D8200A290F9 /* CreateActivityTableViewCell.swift */; };
 		B8CE4F4722AB879A00B06997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE4F4622AB879A00B06997 /* AppDelegate.swift */; };
 		B8CE4F4C22AB879A00B06997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CE4F4A22AB879A00B06997 /* Main.storyboard */; };
 		B8CE4F4F22AB879A00B06997 /* Increff.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8CE4F4D22AB879A00B06997 /* Increff.xcdatamodeld */; };
@@ -19,6 +28,15 @@
 		0B0090C70C305423B6C38C43 /* Pods-Increff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Increff/Pods-Increff.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2374E744AF6294A9D59D12 /* Pods-Increff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increff.release.xcconfig"; path = "Pods/Target Support Files/Pods-Increff/Pods-Increff.release.xcconfig"; sourceTree = "<group>"; };
 		7166C2B56B08C1BFC4453CC7 /* Pods_Increff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Increff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B873154622ABB33100A290F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B873154822ABB88800A290F9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		B873154A22ABC6A400A290F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B873154C22ABDDE100A290F9 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
+		B873154E22ABDF8B00A290F9 /* OwnerActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerActivityTableViewCell.swift; sourceTree = "<group>"; };
+		B873155222AC009300A290F9 /* AddAcitivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcitivityViewController.swift; sourceTree = "<group>"; };
+		B873155422AC30D400A290F9 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		B873155622AC343E00A290F9 /* UserCreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreateEventViewController.swift; sourceTree = "<group>"; };
+		B873155822AC3D8200A290F9 /* CreateActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityTableViewCell.swift; sourceTree = "<group>"; };
 		B8CE4F4322AB879A00B06997 /* Increff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CE4F4622AB879A00B06997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CE4F4B22AB879A00B06997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +98,15 @@
 			children = (
 				B8CE4F4622AB879A00B06997 /* AppDelegate.swift */,
 				B8CE4F4A22AB879A00B06997 /* Main.storyboard */,
+				B873154622ABB33100A290F9 /* MainViewController.swift */,
+				B873154822ABB88800A290F9 /* SignupViewController.swift */,
+				B873154E22ABDF8B00A290F9 /* OwnerActivityTableViewCell.swift */,
+				B873154A22ABC6A400A290F9 /* LoginViewController.swift */,
+				B873155622AC343E00A290F9 /* UserCreateEventViewController.swift */,
+				B873155822AC3D8200A290F9 /* CreateActivityTableViewCell.swift */,
+				B873155222AC009300A290F9 /* AddAcitivityViewController.swift */,
+				B873154C22ABDDE100A290F9 /* OwnerViewController.swift */,
+				B873155422AC30D400A290F9 /* UserViewController.swift */,
 				B8CE4F5022AB879C00B06997 /* Assets.xcassets */,
 				B8CE4F5222AB879C00B06997 /* LaunchScreen.storyboard */,
 				B8CE4F5522AB879C00B06997 /* Info.plist */,
@@ -99,6 +126,7 @@
 				B8CE4F3F22AB879A00B06997 /* Sources */,
 				B8CE4F4022AB879A00B06997 /* Frameworks */,
 				B8CE4F4122AB879A00B06997 /* Resources */,
+				AF946FBA5157B7FC411F2F26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +184,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AF946FBA5157B7FC411F2F26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Increff/Pods-Increff-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RSSelectionMenu/RSSelectionMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSSelectionMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Increff/Pods-Increff-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C9E2BD4CEF4D3061AA8ADC1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,7 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B873154D22ABDDE100A290F9 /* OwnerViewController.swift in Sources */,
+				B873155522AC30D400A290F9 /* UserViewController.swift in Sources */,
+				B873154722ABB33100A290F9 /* MainViewController.swift in Sources */,
+				B873155922AC3D8200A290F9 /* CreateActivityTableViewCell.swift in Sources */,
+				B873155322AC009300A290F9 /* AddAcitivityViewController.swift in Sources */,
 				B8CE4F4F22AB879A00B06997 /* Increff.xcdatamodeld in Sources */,
+				B873154922ABB88800A290F9 /* SignupViewController.swift in Sources */,
+				B873154F22ABDF8B00A290F9 /* OwnerActivityTableViewCell.swift in Sources */,
+				B873154B22ABC6A400A290F9 /* LoginViewController.swift in Sources */,
+				B873155722AC343E00A290F9 /* UserCreateEventViewController.swift in Sources */,
 				B8CE4F4722AB879A00B06997 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

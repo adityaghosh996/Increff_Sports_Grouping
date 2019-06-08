@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 2cfbbe4073676ac90a3a4ec74c8de2046b870d5a
+PODS:
+  - Alamofire (4.8.2)
+  - RSSelectionMenu (6.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - RSSelectionMenu
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - RSSelectionMenu
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  RSSelectionMenu: decee83e020ee9d63e53995eb7f1ea5ca75f0667
+
+PODFILE CHECKSUM: 3bb1b825cfcad528fdc9a8ed84b77cd250954de0
 
 COCOAPODS: 1.5.3

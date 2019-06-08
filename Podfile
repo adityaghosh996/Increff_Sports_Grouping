@@ -6,5 +6,7 @@ target 'Increff' do
   use_frameworks!
 
   # Pods for Increff
+  pod 'Alamofire'
+  pod 'RSSelectionMenu'
 
 end
