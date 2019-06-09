@@ -17,6 +17,11 @@
 		B873155522AC30D400A290F9 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155422AC30D400A290F9 /* UserViewController.swift */; };
 		B873155722AC343E00A290F9 /* UserCreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155622AC343E00A290F9 /* UserCreateEventViewController.swift */; };
 		B873155922AC3D8200A290F9 /* CreateActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155822AC3D8200A290F9 /* CreateActivityTableViewCell.swift */; };
+		B873155B22AC449000A290F9 /* JoinActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155A22AC449000A290F9 /* JoinActivityViewController.swift */; };
+		B873155D22AC567000A290F9 /* CreateActivityByUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155C22AC567000A290F9 /* CreateActivityByUserViewController.swift */; };
+		B873155F22AC765800A290F9 /* UserJoinEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873155E22AC765800A290F9 /* UserJoinEventViewController.swift */; };
+		B873156122AC7B5500A290F9 /* JoinExistingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873156022AC7B5500A290F9 /* JoinExistingActivityViewController.swift */; };
+		B873156322AC830500A290F9 /* JoinAvailableActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873156222AC830500A290F9 /* JoinAvailableActivitiesTableViewCell.swift */; };
 		B8CE4F4722AB879A00B06997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE4F4622AB879A00B06997 /* AppDelegate.swift */; };
 		B8CE4F4C22AB879A00B06997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CE4F4A22AB879A00B06997 /* Main.storyboard */; };
 		B8CE4F4F22AB879A00B06997 /* Increff.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8CE4F4D22AB879A00B06997 /* Increff.xcdatamodeld */; };
@@ -37,6 +42,11 @@
 		B873155422AC30D400A290F9 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B873155622AC343E00A290F9 /* UserCreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreateEventViewController.swift; sourceTree = "<group>"; };
 		B873155822AC3D8200A290F9 /* CreateActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityTableViewCell.swift; sourceTree = "<group>"; };
+		B873155A22AC449000A290F9 /* JoinActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinActivityViewController.swift; sourceTree = "<group>"; };
+		B873155C22AC567000A290F9 /* CreateActivityByUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityByUserViewController.swift; sourceTree = "<group>"; };
+		B873155E22AC765800A290F9 /* UserJoinEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinEventViewController.swift; sourceTree = "<group>"; };
+		B873156022AC7B5500A290F9 /* JoinExistingActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinExistingActivityViewController.swift; sourceTree = "<group>"; };
+		B873156222AC830500A290F9 /* JoinAvailableActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAvailableActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		B8CE4F4322AB879A00B06997 /* Increff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CE4F4622AB879A00B06997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CE4F4B22AB879A00B06997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +115,11 @@
 				B873155622AC343E00A290F9 /* UserCreateEventViewController.swift */,
 				B873155822AC3D8200A290F9 /* CreateActivityTableViewCell.swift */,
 				B873155222AC009300A290F9 /* AddAcitivityViewController.swift */,
+				B873155A22AC449000A290F9 /* JoinActivityViewController.swift */,
+				B873155C22AC567000A290F9 /* CreateActivityByUserViewController.swift */,
+				B873155E22AC765800A290F9 /* UserJoinEventViewController.swift */,
+				B873156022AC7B5500A290F9 /* JoinExistingActivityViewController.swift */,
+				B873156222AC830500A290F9 /* JoinAvailableActivitiesTableViewCell.swift */,
 				B873154C22ABDDE100A290F9 /* OwnerViewController.swift */,
 				B873155422AC30D400A290F9 /* UserViewController.swift */,
 				B8CE4F5022AB879C00B06997 /* Assets.xcassets */,
@@ -238,6 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B873154D22ABDDE100A290F9 /* OwnerViewController.swift in Sources */,
+				B873155D22AC567000A290F9 /* CreateActivityByUserViewController.swift in Sources */,
+				B873156122AC7B5500A290F9 /* JoinExistingActivityViewController.swift in Sources */,
+				B873155F22AC765800A290F9 /* UserJoinEventViewController.swift in Sources */,
 				B873155522AC30D400A290F9 /* UserViewController.swift in Sources */,
 				B873154722ABB33100A290F9 /* MainViewController.swift in Sources */,
 				B873155922AC3D8200A290F9 /* CreateActivityTableViewCell.swift in Sources */,
@@ -247,6 +265,8 @@
 				B873154F22ABDF8B00A290F9 /* OwnerActivityTableViewCell.swift in Sources */,
 				B873154B22ABC6A400A290F9 /* LoginViewController.swift in Sources */,
 				B873155722AC343E00A290F9 /* UserCreateEventViewController.swift in Sources */,
+				B873155B22AC449000A290F9 /* JoinActivityViewController.swift in Sources */,
+				B873156322AC830500A290F9 /* JoinAvailableActivitiesTableViewCell.swift in Sources */,
 				B8CE4F4722AB879A00B06997 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

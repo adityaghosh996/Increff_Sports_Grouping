@@ -37,5 +37,11 @@ class UserViewController: UIViewController {
 
 
   @IBAction func onTapJoinButton(_ sender: UIButton) {
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    guard let userJoinEventVC = storyBoard.instantiateViewController(withIdentifier: "UserJoinEventViewController")
+      as? UserJoinEventViewController else {
+        fatalError("Could not instantiate UserJoinEventViewController")
+    }
+    present(userJoinEventVC, animated: true, completion: nil)
   }
 }

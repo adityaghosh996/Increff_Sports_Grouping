@@ -53,8 +53,8 @@ class OwnerViewController: UIViewController {
             endTime: JSONDict["endString"] as! String
           )
           strongSelf.activities.append(_activity)
-          strongSelf.tableView.reloadData()
         }
+        strongSelf.tableView.reloadData()
       case .failure(let err):
         print(err.localizedDescription)
         fatalError()

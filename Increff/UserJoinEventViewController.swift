@@ -1,26 +1,25 @@
 //
-//  UserCreateEventViewController.swift
+//  UserJoinEventViewController.swift
 //  Increff
 //
-//  Created by aditya.gh on 6/8/19.
+//  Created by aditya.gh on 6/9/19.
 //  Copyright © 2019 Aditya Ghosh. All rights reserved.
 //
 
 import UIKit
 import RSSelectionMenu
 
-public var selectedSport: String?
-public var hyperLocalRadius: Double?
+public var selectedSportArray = [Int]()
 
-class UserCreateEventViewController: UIViewController {
+class UserJoinEventViewController: UIViewController {
 
   @IBOutlet private weak var radiusField: UITextField!
   @IBOutlet private weak var selectSportButton: UIButton!
   @IBOutlet weak var createButton: UIButton!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
-    selectedSport = nil
     hyperLocalRadius = nil
   }
 
@@ -39,22 +38,19 @@ class UserCreateEventViewController: UIViewController {
 
   @IBAction func onTapSelectSportButton(_ sender: UIButton) {
     let selectedNames = [String]()
-    let menu = RSSelectionMenu(dataSource: sports) { (cell, name, indexPath) in
+    selectedSportArray = [Int]()
+    let menu = RSSelectionMenu(selectionStyle: .multiple, dataSource: sports) { (cell, name, indexPath) in
       cell.textLabel?.text = name
     }
     menu.cellSelectionStyle = .tickmark
-    menu.setSelectedItems(items: selectedNames) { [weak self] (name, _, _, _) in
-      guard let strongSelf = self else { return }
-      var title = "Selected Sport: "
-      title.append(name!)
-      strongSelf.selectSportButton.setTitle(title, for: .normal)
-      selectedSport = name
+    menu.setSelectedItems(items: selectedNames, maxSelected: UInt(sports.count)) { (name, _, _, _) in
+      selectedSportArray.append(mapSportsToId[name!]!)
     }
     menu.show(from: self)
   }
 
   @IBAction func onTapCreateEventButton(_ sender: UIButton) {
-    guard let sport = selectedSport else {
+    if selectedSportArray.count == 0 {
       showAlert(with: "Please select a sport")
       return
     }
@@ -71,16 +67,16 @@ class UserCreateEventViewController: UIViewController {
       return
     }
     hyperLocalRadius = radius
-    presentJoinActivityViewController()
+    presentJoinExistingActivityViewController()
   }
 
-  private func presentJoinActivityViewController() {
+  private func presentJoinExistingActivityViewController() {
     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-    guard let joinActivityVC = storyBoard.instantiateViewController(withIdentifier: "JoinActivityViewController")
-      as? JoinActivityViewController else {
-        fatalError("Could not instantiate JoinActivityViewController")
+    guard let joinExistingActivityVC = storyBoard.instantiateViewController(withIdentifier: "JoinExistingActivityViewController")
+      as? JoinExistingActivityViewController else {
+        fatalError("Could not instantiate JoinExistingActivityViewController")
     }
-    present(joinActivityVC, animated: true, completion: nil)
+    present(joinExistingActivityVC, animated: true, completion: nil)
   }
 
 }

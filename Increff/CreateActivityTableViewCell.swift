@@ -10,16 +10,20 @@ import UIKit
 
 class CreateActivityTableViewCell: UITableViewCell {
 
-
-  @IBOutlet private weak var arenaLabel: UITextField!
-  @IBOutlet private weak var distanceLabel: UITextField!
-  @IBOutlet private weak var startLabel: UITextField!
-  @IBOutlet private weak var endLabel: UITextField!
-  @IBOutlet private weak var ownerLabel: UITextField!
+  @IBOutlet weak var arenaLabel: UITextField!
+  @IBOutlet weak var distanceLabel: UITextField!
+  @IBOutlet weak var startLabel: UITextField!
+  @IBOutlet weak var endLabel: UITextField!
+  @IBOutlet weak var ownerLabel: UITextField!
+  @IBOutlet weak var createEventButton: UIButton!
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+    arenaLabel.isUserInteractionEnabled = false
+    distanceLabel.isUserInteractionEnabled = false
+    startLabel.isUserInteractionEnabled = false
+    endLabel.isUserInteractionEnabled = false
+    ownerLabel.isUserInteractionEnabled = false
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,5 +39,4 @@ class CreateActivityTableViewCell: UITableViewCell {
     self.endLabel.text = end
     self.ownerLabel.text = owner
   }
-
 }
