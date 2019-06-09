@@ -11,7 +11,10 @@ import RSSelectionMenu
 import CoreLocation
 import Alamofire
 
-class AddAcitivityViewController: UIViewController {
+public var latitude: Double = 0
+public var longitude: Double = 0
+
+class AddActivityViewController: UIViewController, CLLocationManagerDelegate {
   
   @IBOutlet private weak var eventField: UITextField!
   @IBOutlet private weak var startTimeField: UITextField!
@@ -19,18 +22,47 @@ class AddAcitivityViewController: UIViewController {
   @IBOutlet private weak var addButton: UIButton!
   @IBOutlet private weak var selectSportButton: UIButton!
   var selectedSport: String?
-  var latitude: Double?
-  var longitude: Double?
+  public let locationManager = CLLocationManager()
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupView()
-    let locManager = CLLocationManager()
-    locManager.requestAlwaysAuthorization()
-    if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
-      let currentLocation = locManager.location
-      latitude = currentLocation?.coordinate.latitude
-      longitude = currentLocation?.coordinate.longitude
+    locationManager.requestAlwaysAuthorization()
+    if CLLocationManager.locationServicesEnabled() {
+      locationManager.delegate = self
+      locationManager.desiredAccuracy = kCLLocationAccuracyBest // You can change the locaiton accuary here.
+      locationManager.startUpdatingLocation()
     }
+    setupView()
+  }
+
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    if let location = locations.first {
+      latitude = location.coordinate.latitude
+      longitude = location.coordinate.longitude
+    }
+  }
+
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    if(status == CLAuthorizationStatus.denied) {
+      showLocationDisabledPopUp()
+    }
+  }
+
+  func showLocationDisabledPopUp() {
+    let alertController = UIAlertController(title: "Background Location Access Disabled",
+                                            message: "In order to deliver pizza we need your location",
+                                            preferredStyle: .alert)
+
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+    alertController.addAction(cancelAction)
+
+    let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
+      if let url = URL(string: UIApplication.openSettingsURLString) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+      }
+    }
+    alertController.addAction(openAction)
+
+    self.present(alertController, animated: true, completion: nil)
   }
 
   private func setupView() {
